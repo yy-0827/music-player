@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no,
+    minimum-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>音乐播放器</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <div class="wrapper">
+        <!-- 专辑照片 -->
+        <div class="album-picture">
+             <img src="../source/song_1.jpg" alt="">
+        </div>
+
+        <!-- 歌曲信息 -->
+        <div class="song-info">
+            <div class="song-title">丑八怪</div>
+            <div class="singer">薛之谦</div>
+            <div class="album">意外</div>
+        </div>
+
+        <!-- 进度条 -->
+        <div class="progress">
+            <span class="recent-time">00:00</span>
+            <div class="progressbar">
+                <div class="last"></div>    
+                <div class="next">
+                     <div class="circle"></div>
+                </div>
+            </div>
+            <span class="total-time">05:42</span>
+        </div>
+
+        <!-- 菜单栏 -->
+        <ul class="menu">
+            <li class="btn like"></li>
+            <li class="btn lastsong"></li>
+            <li class="btn start"></li>
+            <li class="btn nextsong"></li>
+            <li class="btn list"></li>
+        </ul>
+
+        <!-- 歌曲列表 -->
+        <dl class="song-list">
+            <dt>歌曲列表</dt>
+            <dd class="close-list">关闭</dd>
+        </dl>
+
+        <script src="./js/jquery-3.4.1.js"></script>
+        <script src="./js/audiocontrol.js"></script>
+        <script src="./js/controllist.js"></script>
+        <script src="./js/gaussBlur.js"></script>
+        <script src="./js/render.js"></script>
+        <script src="./js/progress.js"></script>
+        <script src="./js/index.js"></script>
+
+    </div>
+</body>
+</html>

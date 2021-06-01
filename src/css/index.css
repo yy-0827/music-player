@@ -1,0 +1,169 @@
+*{
+    margin:0px;
+    padding:0px;
+    list-style:none;
+}
+
+.wrapper{
+    position:relative;
+    width:100vw;
+    height:100vh;
+    box-sizing:border-box;
+    border:1px solid #aaa;
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+
+.album-picture{
+    width:60vw;
+    height:60vw;
+    margin:8vh auto;
+    border-radius:50%;
+    background-color:rgba(88,88,88,.5);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.album-picture img{
+    width:57vw;
+    height:57vw;
+    border-radius:50%;
+}
+
+.song-info{
+    width:100%;
+    height:30px;
+    text-align:center;
+}
+
+.song-info .song-title{
+    margin-bottom:5px;
+    font-size:16px;
+    color:#eee;
+}
+
+.song-info .singer,.album{
+    font-size:14px;
+    color:#bbb;
+}
+
+.progress{
+    position:absolute;
+    width:100%;
+    height:20px;
+    margin-bottom:20px;
+    display:flex;
+    align-items:center;
+    bottom:40px;
+}
+
+.progress .recent-time,.total-time{
+    font-size:12px;
+    padding:0 10px;
+}
+
+.progress .progressbar{
+    position:relative;
+    width:10px;
+    height:3px;
+    flex:1 1 auto;
+    background-color:#aaa;
+    margin:0 -4px;
+}
+
+.progress .progressbar .last{
+    float:left;
+    width:0px;
+    height:3px;
+    background-color:burlywood;
+}
+
+.progress .progressbar .next{
+    width:100%; 
+    height:3px;
+    background-color:#888;
+}
+
+.progress .progressbar .next .circle{
+    width:6px;
+    height:6px;
+    background-color:#fff;
+    border-radius:50%;
+    position:absolute;
+    left:0px;
+    top:50%;
+    margin-top:-3px;
+}
+
+
+
+.menu{
+    position:absolute;
+    width:100%;
+    height:40px;
+    display:flex;
+    bottom:0;
+    background-color:rgba(0,0,0,0.2);
+}
+
+.menu .btn{
+    flex:1 1 auto;
+    width:5px;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:20px;
+}
+.menu .like {
+    background-image: url('../images/icon-like.png');
+}
+
+.menu .like.liking {
+    background-image: url('../images/icon-like-solid.png');
+}
+.menu .lastsong {
+    background-image: url('../images/icon-prev.png');
+}
+.menu .start {
+    background-image: url('../images/icon-play.png');
+}
+.menu .playing {
+    background-image: url('../images/icon-pause.png');
+}
+.menu .nextsong {
+    background-image: url('../images/icon-next.png')
+}
+.menu .list{
+    background-image: url('../images/icon-list.png')
+}
+
+.song-list{
+    display:none;
+    position:absolute;
+    width:100%;
+    z-index:1;
+    background-image:linear-gradient(180deg,#444,#999);
+    box-sizing:border-box;
+}
+
+.song-list dt,dd{
+    height:28px;
+    width:100%;
+    font-size: 12px;
+    line-height:28px;
+    padding-left:20px;
+    box-sizing:border-box;
+    color:#eee;
+}
+
+dd.close-list{
+    text-align:center;
+}
+
+.song-list dt{
+    color:#000;
+}
+
+.song-list dd.active{
+    color:#2a2;
+}
